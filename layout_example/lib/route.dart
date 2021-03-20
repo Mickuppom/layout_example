@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
+import 'package:layout_example/screen/histort_screen.dart';
 import 'package:layout_example/screen/main_screen.dart';
 
 class RouteGenerator {
@@ -16,6 +17,9 @@ class RouteGenerator {
         );
         break;
       default:
+        return CupertinoPageRoute(
+          builder: (context) => MainScreen(),
+        );
     }
   }
 }

@@ -55,8 +55,11 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.people),
-              title: Text("Profile"),
+              onTap: () {
+                Navigator.pushNamed(context, '/history');
+              },
+              leading: Icon(Icons.history_edu),
+              title: Text("History"),
             ),
             ListTile(
               leading: Icon(Icons.account_box),
