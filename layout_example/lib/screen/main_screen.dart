@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_example/page.dart';
 
 class MainScreen extends StatefulWidget {
   MainScreen({Key key}) : super(key: key);
@@ -60,6 +61,15 @@ class _MainScreenState extends State<MainScreen> {
       ),
       appBar: AppBar(
         title: Text("Main Screen"),
+      ),
+      body: Center(),
+      bottomNavigationBar: BottomNavigationBar(
+        items: pages
+            .map(
+              (page) =>
+                  BottomNavigationBarItem(icon: page.icon, label: page.label),
+            )
+            .toList(),
       ),
     );
   }
