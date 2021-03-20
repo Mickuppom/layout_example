@@ -12,9 +12,11 @@ class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
 
   void onIndexChanged(int index) {
-    setState(() {
-      currentIndex = index;
-    });
+    setState(
+      () {
+        currentIndex = index;
+      },
+    );
   }
 
   @override
@@ -72,6 +74,8 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Center(),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: onIndexChanged,
         items: pages
             .map(
               (page) =>
