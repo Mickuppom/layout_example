@@ -38,7 +38,7 @@ class _MainScreenState extends State<MainScreen> {
                       backgroundImage: NetworkImage(
                           "https://cf-s3.petcoach.co/thumbnails/article/uploads/articles/363/bdd17f44166dbff74876fced4dc6c9d3ca06ad80.jpeg"),
                     ),
-                    Text("Mic"),
+                    Text("Mickuppom"),
                   ],
                 ),
               ),
