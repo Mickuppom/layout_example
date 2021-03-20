@@ -20,7 +20,7 @@ List<Page> pages = [
     title: "Home",
   ),
   Page(
-    icon: Icon(Icons.home),
+    icon: Icon(Icons.alarm),
     label: "news",
     page: ArticleScreen(),
     title: "News",
