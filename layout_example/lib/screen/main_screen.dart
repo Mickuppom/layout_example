@@ -70,7 +70,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
       ),
       appBar: AppBar(
-        title: Text("Main Screen"),
+        title: Text(pages[currentIndex].title),
       ),
       body: pages[currentIndex].page,
       bottomNavigationBar: BottomNavigationBar(
