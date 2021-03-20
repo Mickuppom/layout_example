@@ -15,19 +15,19 @@ class Page {
 List<Page> pages = [
   Page(
     icon: Icon(Icons.home),
-    label: "home",
+    label: "Home",
     page: HomeScreen(),
     title: "Home",
   ),
   Page(
     icon: Icon(Icons.alarm),
-    label: "news",
+    label: "News",
     page: ArticleScreen(),
     title: "News",
   ),
   Page(
     icon: Icon(Icons.play_arrow),
-    label: "activity",
+    label: "Activity",
     page: ActivityScreen(),
     title: "Activity",
   ),
