@@ -62,8 +62,11 @@ class _MainScreenState extends State<MainScreen> {
               title: Text("History"),
             ),
             ListTile(
-              leading: Icon(Icons.account_box),
-              title: Text("About"),
+              onTap: () {
+                Navigator.pushNamed(context, '/credit');
+              },
+              leading: Icon(Icons.credit_card),
+              title: Text("Credit"),
             ),
             ListTile(
               leading: Icon(Icons.phone),

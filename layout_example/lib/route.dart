@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
+import 'package:layout_example/screen/credit_screen.dart';
 import 'package:layout_example/screen/histort_screen.dart';
 import 'package:layout_example/screen/main_screen.dart';
 
@@ -14,6 +15,11 @@ class RouteGenerator {
       case '/history':
         return CupertinoPageRoute(
           builder: (context) => HistoryScreen(),
+        );
+        break;
+      case '/credit':
+        return CupertinoPageRoute(
+          builder: (context) => CreditScreen(),
         );
         break;
       default:
